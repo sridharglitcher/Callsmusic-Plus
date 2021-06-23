@@ -30,31 +30,31 @@ async def start(_, message: Message):
         parse_mode="markdown"
     )
     await message.reply_text(
-        f"""<b>Hi {message.from_user.mention} 😉️!</b>
+        f"""<b>Hello! {message.from_user.mention} 😉️!</b>
 
-I'm The Nexa Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat 😇!
+I'm TeleRoid Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat 😇!
 
 Also I have more features! Please hit on **/help** to see them 😘!
 
-Made with ❤️ <b>@NexaBotsUpdates</b>""",
+Developer of the Musician<b>@TheTeleRoid</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕", url="https://t.me/MusicsNexa_bot?startgroup=true"
+                        "⭕ 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ⭕", url="https://t.me/TeleRoidGroup"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🤨️ How To Use Me 🤨️", callback_data="cbhelpmenu"
+                        "🛠 𝗔𝗱𝗱 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ", url="https://t.me/NetworkPlayerBor?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔰️ My Update Channel 🔰️", url="https://t.me/NexaBotsUpdates"
+                        "🧲 𝗛𝗲𝗹𝗽 ", callback_data="cbhelpmenu"
                     ),
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                       "⭕ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 ⭕", url="https://t.me/TeleRoid14"
                     )
                 ]
             ]
@@ -64,7 +64,7 @@ Made with ❤️ <b>@NexaBotsUpdates</b>""",
 
 # Help Menu
 
-@Client.on_message(command(["help", "help@MusicsNexa_bot"]))
+@Client.on_message(command(["help", "help@NetworkPlayerbot"]))
 async def help(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
     if usr_cmd == "/help":
@@ -149,7 +149,7 @@ Respect To Code Owners! Not To Me!""",
             [
                 [
                     InlineKeyboardButton(
-                        "🔰️ My Update Channel 🔰️", url="https://t.me/NexaBotsUpdates"
+                        "⭕Updates", url="https://t.me/NexaBotsUpdates"
                     )
                 ],
                 [
